@@ -78,7 +78,7 @@
 + Post-process
     + Train another classifier to learn how to label from logits
     + The two adjacent sentences are also dependent with the following prior transition probability
-        + <img src="https://render.githubusercontent.com/render/math?math=T=\begin{bmatrix}0.492&0.313&0.126&0.044&0.017&0.007\\0.101&0.229&0.484&0.136&0.04&0.011\\0.02&0.039&0.47&0.35&0.108&0.012\\0.018&0.025&0.104&0.545&0.276&0.031\\0.034&0.039&0.142&0.263&0.427&0.094\\0.104&0.118&0.209&0.221&0.123&0.225\end{bmatrix}">
+        ![](https://i.imgur.com/J7Ty9Q0.png)
         + No matter how we include this feature into post-process procedure, the F1 score can never be better. Thus we calculated the co-occurrence from prediction and found that the distribution predicted by our model is almost the same as the transition matrix. We can say that our model had learned to the limit with only embeddings from SciBERT!
 
 ### Reproducibility
